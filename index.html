@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zoya Siddiqui - Clinical Nutritionist</title>
+
   <style>
     /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
@@ -23,11 +24,14 @@
     .container {
       max-width: 500px;
       margin: 0 auto;
-      background-color: #fff;
+      background-color: #d0e7f9;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       padding: 30px 20px;
-background-color: #d0e7f9;
+
+      /* IMPORTANT FIX */
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
@@ -64,7 +68,7 @@ background-color: #d0e7f9;
 
     .expertise li {
       margin-bottom: 8px;
-      padding-left: 10px;
+      padding-left: 12px;
       position: relative;
     }
 
@@ -76,37 +80,50 @@ background-color: #d0e7f9;
     }
 
     .contact {
-      margin-top: 20px;
+      margin-top: 25px;
+      position: relative;
+      z-index: 10;
     }
 
     .contact a {
       display: inline-block;
-      margin: 5px 10px;
-      text-decoration: none;
-      color: #fff;
+      margin: 8px 10px;
+      padding: 12px 22px;
       background-color: #3498db;
-      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
       border-radius: 25px;
-      transition: background-color 0.3s;
+      font-weight: bold;
+      cursor: pointer;
+
+      /* GUARANTEED CLICK FIX */
+      pointer-events: auto;
     }
 
     .contact a:hover {
       background-color: #2980b9;
     }
 
-    @media(max-width: 600px) {
+    @media (max-width: 600px) {
       .container {
         padding: 20px 15px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Zoya Siddiqui</h1>
     <h2>Clinical Nutrition Expert</h2>
-    <p>Hi! I'm Zoya, a passionate clinical nutritionist with over <strong>7 years</strong> of experience in the nutrition field. I specialize in helping people achieve their health goals with science-backed, personalized dietary guidance.</p>
-    
+
+    <p>
+      Hi! I'm Zoya, a passionate clinical nutritionist with over
+      <strong>7 years</strong> of experience in the nutrition field.
+      I specialize in helping people achieve their health goals with
+      science-backed, personalized dietary guidance.
+    </p>
+
     <div class="expertise">
       <h3>Expertise:</h3>
       <ul>
@@ -118,17 +135,20 @@ background-color: #d0e7f9;
       </ul>
     </div>
 
-    <p>I believe in creating practical, easy-to-follow nutrition plans that fit into your lifestyle and help you feel your best every day.</p>
+    <p>
+      I believe in creating practical, easy-to-follow nutrition plans
+      that fit into your lifestyle and help you feel your best every day.
+    </p>
 
     <div class="contact">
-        <a href="https://www.instagram.com/platebypurpose/" target="_blank">Instagram</a>
-  <a href="mailto:platebypurpose@gmail.com">Email Me</a>
-      
+      <a href="https://www.instagram.com/platebypurpose/" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+
+      <a href="mailto:platebypurpose@gmail.com">
+        Email Me
+      </a>
     </div>
   </div>
 </body>
 </html>
-
-
-
-
